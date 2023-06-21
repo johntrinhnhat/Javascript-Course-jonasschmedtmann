@@ -60,7 +60,7 @@ TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
 */
 
-/*
+
 // 1) Understanding the problem
 // - Array transformed to string, separated by ...
 // - What is the X days? Answer: index + 1
@@ -85,4 +85,3 @@ const printForecast = function (arr) {
   console.log('...' + str);
 };
 printForecast(data1);
-*/
