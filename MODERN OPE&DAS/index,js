@@ -21,3 +21,10 @@ console.log(main, secondary);
 
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
+
+// Nested destructuring
+const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
+
