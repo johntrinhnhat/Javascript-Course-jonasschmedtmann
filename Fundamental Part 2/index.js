@@ -21,7 +21,6 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 GOOD LUCK 😀
 */
 
-/*
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));
 
@@ -36,9 +35,9 @@ const checkWinner = function (avgDolphins, avgKoalas) {
   } else if (avgKoalas >= 2 * avgDolphins) {
     console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`);
   } else {
-    console.log('No team wins...');
+    console.log("No team wins...");
   }
-}
+};
 checkWinner(scoreDolphins, scoreKoalas);
 
 checkWinner(576, 111);
@@ -67,10 +66,9 @@ HINT: Remember that an array needs a value in each position, and that value can 
 GOOD LUCK 😀
 */
 
-/*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+};
 // const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
 const bills = [125, 555, 44];
@@ -94,25 +92,24 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
-/*
 const mark = {
-  fullName: 'Mark Miller',
+  fullName: "Mark Miller",
   mass: 78,
   height: 1.69,
   calcBMI: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
-  }
+  },
 };
 
 const john = {
-  fullName: 'John Smith',
+  fullName: "John Smith",
   mass: 92,
   height: 1.95,
   calcBMI: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
-  }
+  },
 };
 
 mark.calcBMI();
@@ -123,9 +120,13 @@ console.log(mark.bmi, john.bmi);
 // "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
 
 if (mark.bmi > john.bmi) {
-  console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+  console.log(
+    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`
+  );
 } else if (john.bmi > mark.bmi) {
-  console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+  console.log(
+    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
+  );
 }
 
 ///////////////////////////////////////
